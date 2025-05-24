@@ -2,7 +2,7 @@ package com.dsalgado.backoffice.agenda.infrastructure.controller;
 
 import com.dsalgado.backoffice.agenda.application.dto.EventRequest;
 import com.dsalgado.backoffice.agenda.application.dto.EventResponse;
-import com.dsalgado.backoffice.agenda.application.usecase.CreateEventUseCase;
+import com.dsalgado.backoffice.agenda.application.management.CreateEventUseCase;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

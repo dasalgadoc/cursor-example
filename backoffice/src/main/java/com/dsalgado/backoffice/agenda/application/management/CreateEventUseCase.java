@@ -1,4 +1,4 @@
-package com.dsalgado.backoffice.agenda.application.usecase;
+package com.dsalgado.backoffice.agenda.application.management;
 
 import com.dsalgado.backoffice.agenda.application.dto.EventRequest;
 import com.dsalgado.backoffice.agenda.application.dto.EventResponse;
