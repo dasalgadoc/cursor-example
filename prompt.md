@@ -60,7 +60,18 @@ Ajusta para que ./src no contenga más código, genera estructura de test en tod
 ```
 
 ### Assistant Response 3
-Reorganizing project structure to:
+Reorganized project structure to:
 1. Move all source code from ./src to appropriate module directories
 2. Add test directories and structure to all modules
+3. Update prompt.md with new interaction
+
+### User Prompt 4
+```
+Elimina el código dentro de ./src. Nuestro único punto de entrada para inicializar una applicación debe estar en apps. Continúa registrando prompts
+```
+
+### Assistant Response 4
+Cleaning up project structure to:
+1. Remove all code from ./src directory
+2. Ensure application entry point is only in apps module
 3. Update prompt.md with new interaction
