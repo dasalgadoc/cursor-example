@@ -14,10 +14,25 @@
     <description>Schools Bounded Context for School Communication SaaS</description>
 
     <dependencies>
+        <!-- Shared Kernel -->
         <dependency>
             <groupId>com.dsalgado</groupId>
             <artifactId>shared-kernel</artifactId>
             <version>${project.version}</version>
+        </dependency>
+
+        <!-- Development Tools -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

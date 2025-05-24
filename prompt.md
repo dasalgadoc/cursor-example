@@ -154,3 +154,18 @@ Correcting project structure:
    - Each bounded context has its own src/main and src/test
    - Domains (enrollment, messaging, profile, etc.) are packages within their bounded context
 3. Updating prompt.md with new interaction
+
+### User Prompt 7
+```
+He borrrado la estructura que no hace parte del proyecto. Recapitulando tenemos apps, backoffice, schools y shared-kernel. Dentro de apps está backoffice-api y schools-api y cada uno de estos componentes es un proyecto java con springboot indepenediente compartiendo un solo repo. El objetivo de backoffice-api es levantar una rest-api cuyo código core está en backofffice por lo que usa este otro proyecto como dependencia y a su vez este usa elementos de shared-kernel. Por otro lado schools-api levanta una rest-api usando como core schools y esta usa dependencias del shared-kernel. Garantiza todo lo anterior.
+```
+
+### Assistant Response 7
+Ensuring correct project structure and dependencies:
+1. Verifying module relationships:
+   - backoffice-api depends on backoffice
+   - schools-api depends on schools
+   - backoffice and schools depend on shared-kernel
+2. Confirming each API module is an independent Spring Boot application
+3. Ensuring proper dependency management in pom.xml files
+4. Verifying package structure in each module
