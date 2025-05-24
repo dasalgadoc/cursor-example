@@ -5,29 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.dsalgado</groupId>
-        <artifactId>school-communication</artifactId>
+        <artifactId>apps</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>apps</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>backoffice-api</module>
-        <module>schools-api</module>
-    </modules>
+    <artifactId>schools-api</artifactId>
+    <name>schools-api</name>
+    <description>Schools API for School Communication SaaS</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.dsalgado</groupId>
-            <artifactId>shared-kernel</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dsalgado</groupId>
-            <artifactId>backoffice</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>com.dsalgado</groupId>
             <artifactId>schools</artifactId>
@@ -40,6 +26,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.dsalgado.apps.schools.SchoolsApiApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
