@@ -240,7 +240,6 @@ Clarifying monorepo structure:
    - backoffice-api → backoffice → shared-kernel
    - schools-api → schools → shared-kernel
 4. Updating prompt.md with new interaction
-```
 
 ### User Prompt 12 [2024-03-19 15:30]
 ```
