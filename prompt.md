@@ -169,3 +169,20 @@ Ensuring correct project structure and dependencies:
 2. Confirming each API module is an independent Spring Boot application
 3. Ensuring proper dependency management in pom.xml files
 4. Verifying package structure in each module
+
+### User Prompt 8
+```
+Excelente, crea un paquete en cada proyecto llamado shared, dentro de este paquete genera la estructura de clean architeture y en la capa infrastructure crea otro paquete llamado controller donde generes un HeathCheck de la rest api para cada proyecto. Genera los correspondientes test y actualiza el prompt
+```
+
+### Assistant Response 8
+Adding health check endpoints to each API:
+1. Creating shared package structure in each project:
+   - domain: Health check domain model
+   - application: Health check use case
+   - infrastructure: Health check controller
+2. Implementing health check endpoints:
+   - backoffice-api: /api/health
+   - schools-api: /api/health
+3. Adding corresponding tests for each health check implementation
+4. Updating prompt.md with new interaction
