@@ -205,3 +205,17 @@ Adding health check to remaining projects:
    - Controllers (where applicable)
 3. Adding corresponding tests
 4. Ensuring proper dependency management between modules
+
+### User Prompt 10
+```
+En el proyecto shared-kernel reorganiza para que el heath check esté dentro de la capa application y controller. No es necesario dentro del proyecto shred-kernel crear un paquete llamado shred sino usar la arquitectura definida en este proyecto sin domains nuevos. Mueve el código y elimina el paquete shared SOLO en este proyecto
+```
+
+### Assistant Response 10
+Reorganizing health check in shared-kernel:
+1. Moving health check components to appropriate layers:
+   - Application layer: GetHealthStatusUseCase
+   - Infrastructure layer: HealthCheckController
+2. Removing shared package structure
+3. Ensuring proper package organization following clean architecture
+4. Updating prompt.md with new interaction

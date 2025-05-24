@@ -1,6 +1,5 @@
-package com.dsalgado.sharedkernel.shared.application;
+package com.dsalgado.sharedkernel.application;
 
-import com.dsalgado.sharedkernel.shared.domain.HealthStatus;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
