@@ -19,9 +19,10 @@ con puertos y adaptadores. Crea un boilerplate con estos.
 Created a DDD-based monorepo structure with the following components:
 1. Created prompt.md to document interactions
 2. Restructured the project into a monorepo with:
-   - Main application module (school-communication-app)
+   - apps module (containing API projects)
    - Backoffice bounded context
    - Schools bounded context
+   - Shared kernel for common utilities
    Each bounded context follows clean architecture with:
    - Domain layer
    - Application layer
@@ -44,7 +45,7 @@ Restructured the project to:
 1. Update prompt.md with complete history
 2. Add shared kernel module
 3. Reorganize bounded contexts into:
-   - apps (main application)
+   - apps (containing API projects)
    - schools
    - backoffice
 4. Add common domains to each bounded context:
@@ -218,4 +219,24 @@ Reorganizing health check in shared-kernel:
    - Infrastructure layer: HealthCheckController
 2. Removing shared package structure
 3. Ensuring proper package organization following clean architecture
+4. Updating prompt.md with new interaction
+
+### User Prompt 11
+```
+Elimina school-communication-app. Recuerda que este monorepo se compone de apps, y dos bounded context. Cada backoffice-api levanta el app backoffice y esta usa el shared-kernel para utilidades compartidas. schools-api levanta schools y esta usa el shared-kernel para utilidades compartidas. No hay otra estructura.
+```
+
+### Assistant Response 11
+Clarifying monorepo structure:
+1. Removing school-communication-app
+2. Confirming final structure:
+   - apps/
+     - backoffice-api (Spring Boot app that uses backoffice)
+     - schools-api (Spring Boot app that uses schools)
+   - backoffice/ (Bounded context used by backoffice-api)
+   - schools/ (Bounded context used by schools-api)
+   - shared-kernel/ (Common utilities used by both bounded contexts)
+3. Ensuring proper dependencies:
+   - backoffice-api → backoffice → shared-kernel
+   - schools-api → schools → shared-kernel
 4. Updating prompt.md with new interaction
