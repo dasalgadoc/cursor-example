@@ -186,3 +186,22 @@ Adding health check endpoints to each API:
    - schools-api: /api/health
 3. Adding corresponding tests for each health check implementation
 4. Updating prompt.md with new interaction
+
+### User Prompt 9
+```
+Eliminé componentes generados que no se ajustaban a la arquitecutra. Genera el heath check en los demás proyectos (schools-api, schools, backoffice, shared-kernel)
+```
+
+### Assistant Response 9
+Adding health check to remaining projects:
+1. Creating shared package structure in:
+   - schools-api
+   - schools
+   - backoffice
+   - shared-kernel
+2. Implementing health check components following clean architecture:
+   - Domain models
+   - Use cases
+   - Controllers (where applicable)
+3. Adding corresponding tests
+4. Ensuring proper dependency management between modules
