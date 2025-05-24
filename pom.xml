@@ -17,7 +17,8 @@
 	<description>School Communication SaaS Backend - DDD Monorepo</description>
 
 	<modules>
-		<module>school-communication-app</module>
+		<module>shared-kernel</module>
+		<module>apps</module>
 		<module>backoffice</module>
 		<module>schools</module>
 	</modules>

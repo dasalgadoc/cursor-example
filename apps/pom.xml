@@ -9,11 +9,16 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>school-communication-app</artifactId>
-    <name>school-communication-app</name>
+    <artifactId>apps</artifactId>
+    <name>apps</name>
     <description>Main application module for School Communication SaaS</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.dsalgado</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.dsalgado</groupId>
             <artifactId>backoffice</artifactId>
