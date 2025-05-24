@@ -138,3 +138,19 @@ Restructuring project to implement new organization:
    - messaging
 4. Updating shared-kernel structure
 5. Adding presentation layer to all domains
+
+### User Prompt 6
+```
+Corrige los siguientes aspectos. 1. En apps elimina .src/ debe existir únicamente backoffice-api para levantar el proyecto de backoffice y schools-api para levantar el proyecto schools-api. Cada uno de estos proyectos debe ser independiente en el monorepo y poder instanciar al bounded context adecuado. 2. En schools y backoffice el cada domain es un paquete de un solo proyecto por lo que schools debe contener src/main y src/test y a este nivel definir enrollment, messaging, profile, etc. 3. Registra el prompt
+```
+
+### Assistant Response 6
+Correcting project structure:
+1. Removing src/ from apps module, keeping only independent API projects:
+   - backoffice-api (for backoffice bounded context)
+   - schools-api (for schools bounded context)
+2. Restructuring schools and backoffice modules:
+   - Moving domains to package level under src/main/java
+   - Each bounded context has its own src/main and src/test
+   - Domains (enrollment, messaging, profile, etc.) are packages within their bounded context
+3. Updating prompt.md with new interaction

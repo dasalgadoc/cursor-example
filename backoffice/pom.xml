@@ -5,36 +5,32 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.dsalgado</groupId>
-        <artifactId>school-communication-saas</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <artifactId>school-communication</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>backoffice</artifactId>
     <name>backoffice</name>
-    <description>Backoffice bounded context for School Communication SaaS</description>
+    <description>Backoffice Bounded Context for School Communication SaaS</description>
 
     <dependencies>
-        <!-- Domain Layer -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Application Layer -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
-
-        <!-- Infrastructure Layer -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.dsalgado</groupId>
+            <artifactId>shared-kernel</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project> 
